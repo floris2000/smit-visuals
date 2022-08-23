@@ -1,0 +1,144 @@
+.c {
+    height: 60vh;
+    width: 100%;
+    background-color: #e3d5ca;
+    padding-top: 100px;
+    display: flex;
+}
+
+.c-left {
+    height: 100%;
+    flex: 3;
+}
+
+.c-img-wrapper {
+    display: flex;
+    margin: 0px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 4px #d6ccc2;
+
+}
+
+.c-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.c-name {
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.c-right {
+    flex: 4;
+    padding-left: 300px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 6px 0px;
+}
+
+form {
+    background-color: #e3d5ca;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 50%;
+    height: 50px;    
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0px;
+    font-size: 14px;
+    background-color: #e3d5ca;
+}
+
+textarea {
+    width: 60%;
+    height: 200px;
+    margin: 10px 0px;
+    font-size: 14px;
+    background-color: #e3d5ca;
+}
+
+button {
+    background-color: #dda15e;
+    border: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    margin:20px 0px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    .c {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .c-right {
+        flex: 1;
+        padding: 40px 4px 40px 4px; 
+    }
+
+    .c-left {
+        flex: 1
+    }
+
+    p{
+        text-align: center;
+    }
+
+
+    input {
+        width: 90%;
+        margin: 4px auto;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 24px;
+    }
+
+    textarea {
+        width: 90%;
+        margin:10px auto auto auto;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding-top: 4px;
+        font-size: 24px;
+    }
+
+    .c-name {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 22px;
+        font-weight: 200;
+    }
+
+    button {
+        margin: 20px auto;
+        width: 90%;
+        border-radius: 10px;
+    }
+}

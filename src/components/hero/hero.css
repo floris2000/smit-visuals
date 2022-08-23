@@ -1,0 +1,111 @@
+.h {
+    background-color: #e3d5ca;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.h-img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.h-wrapper {
+    display: flex;
+    position: absolute;
+    top:25%;
+    right:10%;
+    width: 800px; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.h-title {
+    font-size: 100px;
+    font-weight: 500;
+    z-index: 9;
+    left: 1;
+}
+
+.h-info {
+    font-size: 20px;
+    width: 60%;
+    font-weight: 300;
+}
+
+.h img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.h-img1 {
+    opacity: 1;
+    animation-name: heroFade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes -heroFade- {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    20%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .h{ 
+        letter-spacing: 0px;
+    }
+
+    .h-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top:30%;
+        width: 100%;
+        right: 0;
+    }
+
+    .h-title {
+        font-size: 50px;
+        margin-top: -50px;
+        margin-bottom: 15px;
+    }
+
+    .h-info {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .h-img-wrapper {
+        height: 100%;
+        width: auto;
+    }
+
+    .h img {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+}
